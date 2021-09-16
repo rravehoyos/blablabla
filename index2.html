@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>papa</title>
+	<style> 
+	.verde{
+		position: absolute;
+		top: 50px;
+		left: 300px;
+		background: green;
+		width: 900px;
+		height: 600px;
+		padding-left: 200px;
+		box-sizing: border-box;
+		padding-top: 200px;
+		color: white;
+		font-size: 100px;
+		z-index: 1;
+	}
+	.papa{
+		position: absolute;
+		top: 200px;
+		left: 90px;
+		background: red;
+		width: 200px;
+		height: 80px;
+		z-index: 1;
+	}
+	.hijo{
+		position: absolute;
+		top: 0px;
+		left: 315px;
+		background: yellow;
+		width: 600px;
+		height:300px;
+		z-index: 10;
+		display: none;
+	}
+
+	.papa:hover .hijo{
+		display: block;
+		background: red;
+	}
+	</style>
+</head>
+<body>
+	
+	<div class="verde">  Hola a todos </div>
+	<div class="papa">
+		<div class="hijo">
+			<img src="foto1.png">
+		</div>
+	</div>
+
+</body>
+</html>
